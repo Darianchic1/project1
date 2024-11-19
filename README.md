@@ -1,2 +1,8 @@
 # project1
-The first programming project: telegram-game which will motivate students study 
+The first programming project: telegram-game which will motivate students study
+
+Проект выполнили Татарникова Даша (467678) и Иванова Даша (466010)
+## Распределение ролей
+- идея, создание самого телеграм-бота (работа с библиотекой telebot) - совместно
+- логика игры - Иванова Дарья
+- внутреннее наполнение и оформление игры - Татарникова Даша
