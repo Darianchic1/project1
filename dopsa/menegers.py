@@ -8,7 +8,7 @@ def generate_array(number: int) -> str:
     Args:
         number (int): прогресс на данный момент
     return:
-        progress (str): Страка с прогрессом
+        progress (str): Строка с прогрессом
     """
     array = []
     for i in range(8):
