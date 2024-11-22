@@ -3,7 +3,7 @@ from telebot import types
 import random
 
 from config import config
-from menegers import generate_array
+from dopsa.utils import generate_array
 
 
 data = {}
@@ -40,13 +40,14 @@ def send_welcome(message):
         message
     """
     global count_win
+    #определение следующего шага
     if data[message.chat.id] == 6:
         data[message.chat.id] = 0
         name = message.chat.first_name
         count_win += 1
         text = f"{name} помог(ла) убежать студенту от допсы! 🏆\n\nОн закрыл сессию уже {count_win} раз!\n\n🥴💯💯💯💯💯💯💯🧑🏼‍💻🥂"
         bot.send_message(message.chat.id, text)
-        return  # выходим из функции, так как дальнейшие шаги нас не интересуют
+        return  
     if random.random() >= 0.2:
         data[message.chat.id] += 1
         text = "Студент) на шаг ближе к закрытию сессии!🥳"

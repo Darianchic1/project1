@@ -12,6 +12,7 @@ def generate_array(number: int) -> str:
     """
     array = []
     for i in range(8):
+        #определение и отображение прогресса
         if i == number:
             array.append("🧑🏼‍💻")
         elif i > number:
